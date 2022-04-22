@@ -72,4 +72,10 @@ public class RSVPRepository {
         return Optional.empty();
     }
 
+    public boolean deleteRsvpByEmail(String email) {
+
+        int count = template.update(SQL_DELETE_RSVP_BY_EMAIL, email);
+        return 1 == count;
+    }
+
 }
