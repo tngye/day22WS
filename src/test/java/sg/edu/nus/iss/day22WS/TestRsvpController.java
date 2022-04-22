@@ -93,5 +93,4 @@ class TestRsvpController {
 			assertEquals("test", name, "Expect %s RSVP. Got %s".formatted("test", name));
 		
 	}
-
 }
